@@ -9,7 +9,6 @@ public class Product {
     private float price;
     private String image;
 
-    // Getters and Setters
 
     public int getId() {
         return id;

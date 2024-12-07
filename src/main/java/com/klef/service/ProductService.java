@@ -14,14 +14,14 @@ import java.util.List;
 @Service
 public class ProductService {
 
-    private final String API_URL = "https://fakestoreapi.com/products"; // Fake Store API URL
+    private final String API_URL = "https://fakestoreapi.com/products"; 
     
     @Autowired
     private RestTemplate restTemplate;
 
     public List<Product> getAllProducts() {
-        // Updated code to avoid deprecated method
-        UriComponentsBuilder builder = UriComponentsBuilder.newInstance()
+
+    	UriComponentsBuilder builder = UriComponentsBuilder.newInstance()
                 .scheme("https")
                 .host("fakestoreapi.com")
                 .path("/products");
